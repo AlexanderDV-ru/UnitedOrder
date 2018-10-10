@@ -1,0 +1,18 @@
+extends /headered
+
+block title
+	title #{$msgs$.sitename} - #{$msgs$.clientWorkspace}
+
+block inHead0
+	link(rel='stylesheet', href='/stylesheets/style2.css')
+
+block content
+	a.greenButton(href="/workspace/client/order" style="display: inline-block") #{$msgs$.order}
+	a.greenButton(href="/workspace/client/checking" style="display: inline-block") #{$msgs$.checking}
+	a.greenButton(href="/workspace/client/sending" style="display: inline-block") #{$msgs$.sending}
+	script.
+		for(var v=0;v<document.getElementsByTagName("a").length;v++)
+			if(document.getElementsByTagName("a")[v].href===window.location.href)
+				document.getElementsByTagName("a")[v].setAttribute("class",document.getElementsByTagName("a")[v].getAttribute("class")+" disabledCSS")
+	br
+	block functions

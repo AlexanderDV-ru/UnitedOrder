@@ -1,0 +1,63 @@
+'sitename': 'United Order'
+'reloadpage': 'Перезагрузить страницу'
+'howToEnableJS': 'Как включить JavaScript'
+'jsDisabled': 'Ошибка: в вашем браузере выключен JavaScript!'
+'enableJsToUse': 'Для использования данного сайта вам необходимо включить JavaScript в настройках вашего браузера.'
+'findInYandex': 'Искать в Яндексе'
+'findInGoogle': 'Искать в Google'
+'signout': 'Выйти из аккаунта'
+'signin': 'Войти в аккаунт'
+'createAccount': 'Создать аккаунт'
+'accountsManagement': 'Управление аккаунтами'
+'changePassword': 'Изменить пароль'
+'passwordChanging': 'Изменение пароля'
+
+
+'login': 'Логин'
+'password': 'Пароль'
+
+'perms': 'Права'
+'groups': 'Группы'
+'groupsNames': 'Названия групп'
+
+'property': 'Свойство'
+'value': 'Значение'
+
+'markers': 'Метки'
+
+'externalNote': 'Внешнее примечание'
+'internalNote': 'Внутреннее примечание'
+'distributorNote': 'Примечание поставщика'
+
+'naming': 'Наименование'
+'minPrice': 'Минимальная цена'
+'manufacturer': 'Производитель'
+'distributor': 'Поставщик'
+'obliqueness': 'Отклонение'
+'inStock': 'В наличии'
+'expirationDate': 'Срок годности'
+'priceOfStateRegister': 'Цена госреестра'
+'price': 'Цена'
+'order': 'Заказ'
+'cost': 'Стоимость'
+'id': 'ID'
+
+'checking': 'Проверка'
+'sending': 'Отправка'
+
+'enterOrderName': 'Введите название заказа'
+
+'createNewOrder': 'Создать новый заказ'
+
+'companyName': 'Название компании'
+'name': 'Название'
+'regions': 'Регионы'
+'sellingProductsTypes': 'Типы продаваемых продуктов'
+'consumptionProductsTypes': 'Типы сопутствующих продуктов'
+
+'error_workspaceWithAccessNotExists': 'Ошибка: рабочего пространства с доступом не существует!'
+'error_404': 'Ошибка 404'
+'error_403': 'Ошибка 403'
+'error_messageUndefined': 'Ошибка: сообщение '%0' не найдено!'
+'error_orderGreaterThanInStock': 'Ошибка: нельзя заказывать больше, чем есть в наличии! \nВ наличии %1, вы заказываете %0, пожалуйста, измените ваш заказ:'
+'error_orderLessThanZero': 'Ошибка: нельзя заказывать меньше, чем ноль! \nВы заказываете %0, пожалуйста, измените ваш заказ:'

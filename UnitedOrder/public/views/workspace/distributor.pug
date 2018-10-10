@@ -1,0 +1,27 @@
+extends /headered
+
+block title
+	title #{$msgs$.sitename} - #{$msgs$.distributorWorkspace}
+
+block inHead0
+	link(rel='stylesheet', href='/stylesheets/style2.css')
+
+block content
+	table
+		tr
+			td
+				div#regions(align="left" tabindex="1")
+					select#regionSelect(size=10)
+						- for(var v=0;v<data.regions.length;v++)
+							option(onclick="getUnits(this.textContent)")!= data.regions[v]
+			td
+				div#units(align="left" tabindex="2")
+					select#unitSelect(size=10) #{data.units}
+			td
+				table.borderedTable(border="1" style="width: 90%" tabindex="3")
+					thead
+						tr
+							th #{$msgs$.property}
+							th #{$msgs$.value}
+					tbody#unitInfo
+	script(type="text/javascript" src="/scripts/distributor.js")

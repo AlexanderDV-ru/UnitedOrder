@@ -1,0 +1,33 @@
+extends ../client
+
+block title
+	title #{$msgs$.sitename} - #{$msgs$.checking}
+
+block functions
+	include ./orderNameSelectWithSearch
+	br
+	input#existOrdersSearchField.focusElementOfSelectable-existOrdersSearchHints.browserStyle(type="search" onfocus="document.getElementById(selectablesModel[1]).style.display='';updateSearch('existOrdersSearchHints','existOrdersSearchField')" onblur="setTimeout(function(){document.getElementById(selectablesModel[1]).style.display='none';},100);" oninput="func('existOrdersSearchHints','existOrdersSearchField')" style="display: none;width: 260px")
+	select#existOrdersSearchHints(size="10" style="position: absolute; z-index: 100; display: none;")
+	br
+	label#existOrdersSearchHintsLabel
+	br
+	br
+	form.focusElementOfSelectable-orderedTableBody(tabindex="0" style="display: none")
+		table#orderedTable.borderedTable(border="1" style="width: 99%")
+			thead#orderedTableHead
+			tbody#orderedTableBody
+	br
+	br
+	form.focusElementOfSelectable-orderOffersTableBody(tabindex="0" style="display: none")
+		table#orderOffersTable.borderedTable(border="1" style="width: 99%")
+			thead#orderOffersTableHead
+			tbody#orderOffersTableBody
+	br
+	br
+	form(style="display: none")
+		table#Table.borderedTable(border="1" style="width: 90%")
+			thead#TableHead
+			tbody#TableBody
+	br
+	br
+	script(type="text/javascript" src="/scripts/order.js")
