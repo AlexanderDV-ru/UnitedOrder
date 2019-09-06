@@ -1,6 +1,7 @@
 {
   "name": "UnitedOrder",
   "version": "0.5.4a",
+  "authors": "AlexanderDV",
   "private": true,
   "scripts": {
     "start": "node app"

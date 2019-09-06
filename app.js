@@ -7,12 +7,13 @@ var fs = exports.fs = require('fs')
 var bodyParser = require("body-parser")
 var iconv = require('iconv-lite')
 var accepts = require('accepts')
+var packageJson = require('./package.json')
 
 var application = express()
 
-var programName = exports.programName = "UnitedOrder"
-var programVersion = exports.programVersion = "0.5.3a"
-var programAuthors = exports.programAuthors = "AlexanderDV"
+var programName = exports.programName = packageJson.name
+var programVersion = exports.programVersion = packageJson.version
+var programAuthors = exports.programAuthors = packageJson.authors
 var program = exports.program = programName + " v" + programVersion + " by " + programAuthors
 
 var urlencodedParser = bodyParser.urlencoded(
@@ -272,7 +273,7 @@ function getUserLanguage(user, dir)
 				return d[v2].toLowerCase().substring(0, 5);
 }
 
-get([ '[^]+[.]css', '[^]+[.]ico', '[^]+[.]js' ], function(request, response)
+get([ '[^]+[.]css', '[^]+[.]ico', '[^]+[.]js', '/robots[.]txt' ], function(request, response)
 {
 	response.end(fs.readFileSync("public" + request.url, "utf8"))
 }, undefined, undefined, undefined, true)
